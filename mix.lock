@@ -1,7 +1,7 @@
 %{
   "backoff": {:git, "git://github.com/ferd/backoff.git", "dfb19a20c37b73af067edc3c335624bdf9517396", [tag: "1.1.6"]},
   "cowlib": {:git, "https://github.com/ninenines/cowlib", "106ba84bb04537879d8ce59321a04e0682110b91", [ref: "2.6.0"]},
-  "eld": {:git, "https://github.com/launchdarkly/erlang-server-sdk.git", "0386700df6abc77d0ecbfa7fc22e1adf469d6b97", [tag: "1.0.0-alpha1"]},
+  "eld": {:git, "https://github.com/launchdarkly/erlang-server-sdk.git", "03055021d1ec9d505713e54d3ae641d1e1f2180f", [tag: "1.0.0-alpha2"]},
   "gun": {:git, "https://github.com/ninenines/gun.git", "e7dd9f227e46979d8073e71c683395a809b78cb4", [ref: "1.3.0"]},
   "jsx": {:git, "git://github.com/talentdeficit/jsx.git", "fc2a001073f2300ba38427c23e83d5673c020542", [tag: "v2.9.0"]},
   "lru": {:git, "git://github.com/barrel-db/erlang-lru.git", "e304b736efe8a92d76fbe77c2a13028b7c5c2b95", [tag: "1.3.1"]},
