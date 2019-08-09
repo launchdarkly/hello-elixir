@@ -14,4 +14,4 @@ Example application using the Erlang server SDK in Elixir.
 
 `iex> {:ok, pid} = HelloElixir.start`
 
-`iex> LDApi.get(pid, "FLAG_KEY", FALLBACK_VALUE, "USER")`
+`iex> LDApi.get(pid, "FLAG_KEY", FALLBACK_VALUE, "USER_KEY")`

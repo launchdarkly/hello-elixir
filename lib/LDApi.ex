@@ -15,7 +15,7 @@ defmodule LDApi do
   end
 
   def handle_call({:get, key, fallback, user}, _from, state) do
-    {:reply, :eld.evaluate(key, %{:key => user}, fallback), state}
+    {:reply, :eld.variation(key, %{:key => user}, fallback), state}
   end
 
   def handle_info(_msg, state) do
