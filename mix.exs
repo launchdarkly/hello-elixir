@@ -21,7 +21,7 @@ defmodule HelloElixir.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:eld, "~> 1.0.0-beta1"}
+      {:ldclient, git: "https://github.com/launchdarkly/erlang-server-sdk", tag: "1.0.0-beta2"}
     ]
   end
 end

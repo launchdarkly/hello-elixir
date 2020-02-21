@@ -10,12 +10,12 @@ defmodule LDApi do
   end
 
   def init(:ok) do
-  	:eld.start_instance(String.to_charlist(Application.get_env(:hello_elixir, :sdk_key)))
+  	:ldclient.start_instance(String.to_charlist(Application.get_env(:hello_elixir, :sdk_key)))
     {:ok, %{}}
   end
 
   def handle_call({:get, key, fallback, user}, _from, state) do
-    {:reply, :eld.variation(key, %{:key => user}, fallback), state}
+    {:reply, :ldclient.variation(key, %{:key => user}, fallback), state}
   end
 
   def handle_info(_msg, state) do
