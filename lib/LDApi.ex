@@ -6,11 +6,20 @@ defmodule LDApi do
   end
 
   def get(server, key, fallback, user) do
-  	GenServer.call(server, {:get, key, fallback, user})
+    GenServer.call(server, {:get, key, fallback, user})
   end
 
   def init(:ok) do
-  	:ldclient.start_instance(String.to_charlist(Application.get_env(:hello_elixir, :sdk_key)))
+    :ldclient.start_instance(
+      String.to_charlist(Application.get_env(:hello_elixir, :sdk_key)),
+      :default,
+      %{
+        :http_options => %{
+          :tls_options => :ldclient_config.tls_basic_options()
+        }
+      }
+    )
+
     {:ok, %{}}
   end
 
