@@ -21,7 +21,7 @@ defmodule HelloElixir.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:ldclient, git: "git@github.com:launchdarkly/erlang-server-sdk-private.git", branch: "u2c"},
+      {:ldclient, "~> 2.0", hex: :launchdarkly_server_sdk}
     ]
   end
 end
