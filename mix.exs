@@ -21,7 +21,7 @@ defmodule HelloElixir.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:ldclient, "~> 1.6", hex: :launchdarkly_server_sdk}
+      {:ldclient, "~> 2.0", hex: :launchdarkly_server_sdk}
     ]
   end
 end
