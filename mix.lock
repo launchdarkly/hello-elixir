@@ -1,6 +1,6 @@
 %{
   "certifi": {:hex, :certifi, "2.17.0", "835748414307e15e05b17d0e518190228ce648b08d569a5cc93a85a40f3e5c9b", [:rebar3], [], "hexpm", "8122798a17f0293c80daada25d0f81c7f4d708c73fef782c7c9b1950e26e4d21"},
-  "cowlib": {:hex, :cowlib, "2.17.1", "3e6053016d1ab245730f0af688755476dcedb1c25ed8fb5751f59a2bfdc0c9af", [:make, :rebar3], [], "hexpm", "ff08bd17e6dd931445b18af77315b9b5fe052407110964ad2588c686b57b5e3f"},
+  "cowlib": {:hex, :cowlib, "2.18.0", "4a3ef8cb012c21c7cbb7c925f75405e26d7fcd393fd78c46187539dbc9a48310", [:make, :rebar3], [], "hexpm", "c4f89d33a61162d4cfdcb5a1af7e562d80a700b2573cc71020ce6521b152dc1a"},
   "eredis": {:hex, :eredis, "1.7.1", "39e31aa02adcd651c657f39aafd4d31a9b2f63c6c700dc9cece98d4bc3c897ab", [:mix, :rebar3], [], "hexpm", "7c2b54c566fed55feef3341ca79b0100a6348fd3f162184b7ed5118d258c3cc1"},
   "gun": {:hex, :gun, "2.4.1", "c3a8bff8e155e1fc8e499216599bb7effbd27bc1985662a8b25016090dc18428", [:make, :rebar3], [{:cowlib, ">= 2.15.0 and < 3.0.0", [hex: :cowlib, repo: "hexpm", optional: false]}], "hexpm", "1450575b4d393aa0811322727b90ad1dd94b5c10026f54a1641785bcbd250384"},
   "jsx": {:hex, :jsx, "3.1.0", "d12516baa0bb23a59bb35dccaf02a1bd08243fcbb9efe24f2d9d056ccff71268", [:rebar3], [], "hexpm", "0c5cc8fdc11b53cc25cf65ac6705ad39e54ecc56d1c22e4adb8f5a53fb9427f3"},
