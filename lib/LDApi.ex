@@ -10,17 +10,23 @@ defmodule LDApi do
   end
 
   def init(:ok) do
-    :ldclient.start_instance(
-      String.to_charlist(Application.get_env(:hello_elixir, :sdk_key)),
-      :default,
-      %{
-        :http_options => %{
-          :tls_options => :ldclient_config.tls_basic_options()
-        }
-      }
-    )
+    case Application.get_env(:hello_elixir, :sdk_key) do
+      sdk_key when is_binary(sdk_key) and sdk_key != "" ->
+        :ldclient.start_instance(
+          String.to_charlist(sdk_key),
+          :default,
+          %{
+            :http_options => %{
+              :tls_options => :ldclient_config.tls_basic_options()
+            }
+          }
+        )
 
-    {:ok, %{}}
+        {:ok, %{}}
+
+      _ ->
+        {:stop, "LD_SDK_KEY is not set. Run: export LD_SDK_KEY=<your SDK key>"}
+    end
   end
 
   def handle_call({:get, key, fallback, context_key}, _from, state) do
