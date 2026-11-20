@@ -1,0 +1,20 @@
+version: 2
+updates:
+  - package-ecosystem: 'github-actions'
+    directory: '/'
+    schedule:
+      interval: 'monthly'
+    cooldown:
+      default-days: 7
+      exclude:
+        - 'launchdarkly/*'
+
+  - package-ecosystem: 'mix'
+    directory: '/'
+    schedule:
+      interval: 'monthly'
+    cooldown:
+      default-days: 7
+      exclude:
+        - 'ldclient'
+        - 'launchdarkly_server_sdk'
